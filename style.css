@@ -61,7 +61,7 @@
 .text-justify {
     text-align: center;
     opacity: 1;
-    font: 20px sans-serif;
+    font: 15px sans-serif;
     color: rgb(255, 255, 255);
     z-index: 1;
 
@@ -71,11 +71,10 @@
     display: flex;
     background-color: rgba(78, 78, 78, 0.6);
     text-justify: center;
-    font: 20px sans-serif;
+    font: 15px sans-serif;
     width: 60%;
     margin-top: 60px; 
-    
-    margin: 85px; 
+    margin: 75px; 
     
 }
 
