@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f888f8161c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+
+.black_light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #123;
+}
+
+.black_light.active{
+    background-color: rgb(206, 206, 206);
+}
+
+.black_light_btn{
+    width: 50px;
+    height: 25px; 
+    border: 5px solid #fff;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.black_light_btn:after{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    top:5%;
+    left:2px;
+    transform: translateY(-50);
+}
+
+.black_light_btn.active:after{
+    left:25px;
+}
+
+#black{
+    position: relative;
+    top: 13%;
+    left: 15%;
+}
+
+#sun{
+    position: relative;
+    top: 13%;
+    left: 28%;
+}
+
+
+
+</style>
+<body>
+    <div class="black_light" >
+        
+        <div class="black_light_btn">  <i class="fa-solid fa-moon fa-flip" style="color: #030303;" id="black"></i>
+        <i class="fa-solid fa-sun fa-spin" style="color: #ffe32e;" id="sun"></i> 
+            
+        </div>
+    </div>
+ 
+</body>
+<script>
+    const btn = document.querySelector('.black_light_btn');
+    const black_light = document.querySelector('.black_light');
+
+    btn.onclick = function()
+    {
+        this.classList.toggle("active");
+        black_light.classList.toggle("active");
+    }
+</script>
+</html>

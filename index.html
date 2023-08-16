@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu_radial.css">
+    <link rel="stylesheet" href="./projetos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family= Josefin+Sans:wght@500 & family display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/f888f8161c.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Mauro Cesar</title>
+</head>
+<style>
+
+    .black_light{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px;
+        
+    }
+    
+    
+    .black_light_btn{
+        width: 50px;
+        height: 25px; 
+        border: 5px solid #ffffff;
+        border-radius: 60px;
+        position: relative;
+        cursor: pointer; 
+
+    }
+
+    .black_light_btn.active{
+        border: 5px solid #050505;    
+    }
+    
+    .black_light_btn:after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 18px;
+        background: #f8f8f8;
+        border-radius: 50% ;
+        left:2px;
+        transform: translateY(-40);
+    }
+    
+    .black_light_btn.active:after{
+        
+        left:20px;
+        border: 5px solid #000000;
+        background: #0c0b0b;
+    }
+    
+    #black{
+        position: relative;
+        bottom: 20%;
+        left: 15%;
+    }
+    
+    #sun{
+        position: relative;
+        bottom: 20%;
+        left: 20%;
+    }
+    
+    
+    
+    </style>
+
+<body>
+    
+    <div class = "superior">
+        <div class="black_light" >
+        
+            <div class="black_light_btn" >  <i class="fa-solid fa-moon fa-flip" style="color: #030303;" id="black" onclick="color()"></i>
+            <i class="fa-solid fa-sun fa-spin" style="color: #ffe32e;" id="sun" onclick="color()"></i> 
+                
+            </div>
+        </div>
+        
+        <h2 class="portfolio" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">Lgz<spam>Engenharia</spam></h2>
+        <nav class = "menu"></nav>
+            <ul id="menu-list" >
+                <li><a class="link-menu" href="#home">Home</a></li>
+                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
+                <li><a class="link-menu" href="#fale comigo">Contato</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars "  id = "menu-icon" onclick="showMenu()"></i>
+    </div>
+    <div class="box">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block " id="text-carrousel">
+                        <p class="text-justify">A inspeção das áreas comuns em condomínios busca identificar falhas construtivas por meio de análises técnicas e visuais. 
+                            Isso assegura que os proprietários recebam as áreas compartilhadas conforme prometido pela construtora. Realizar a inspeção antes do recebimento 
+                            oficial evita custos iniciais de manutenção e protege o síndico de responsabilidades legais.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block " id="text-carrousel">
+                        <p class="text-justify">A inspeção de recebimento de imóvel verifica problemas na construção usando análise técnica, visual e de documentos. Garante que 
+                            o proprietário receba o imóvel conforme comprou, seja na compra, aluguel ou após reformas..</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block " id="text-carrousel">
+                        <p class="text-justify">A inspeção de entrega de obras identifica problemas construtivos após a construção ou reforma, permitindo correções pré-entrega. 
+                            Isso evita manutenções posteriores, protege a reputação da empresa e previne questões legais futuras com clientes</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+    
+
+    <div class = "projetos" id = "projetos-id">
+        <h2> Serviços Prestados</h2>
+
+        <div class="cards-projetos">
+            <div class= "proj1" data-aos="fade-down-right"data-aos-duration="2000">
+                <div class = "inf1">Detecção Vazamentos</div>
+                <div class = "card1" ><button id="btn" onclick="exibir1()">Ver Mais</div>
+                
+                <div class="cartao1" id = "cardtxt1" >A vistoria de detecção de vazamento visa identificar a origem
+                    precisa do problema através de análises técnicas e testes. Isso possibilita abordar a causa da
+                    infiltração de forma eficaz, evitando gastos desnecessários em soluções temporárias e garantindo
+                    reparos permanentes.
+
+                    <br>  
+                    <br>              
+                </div>   
+            </div>
+
+            <div class= "proj2" data-aos="fade-down-right"data-aos-duration="2000">
+                <div class = "inf2">Laudos de AVCB</div>
+                <div class = "card2" ><button id="btn" onclick="exibir2()">Ver Mais</div>
+                
+                <div class="cartao2" id = "cardtxt2" >O Auto de Vistoria do Corpo de Bombeiros (AVCB) certifica o 
+                    cumprimento das normas de combate a incêndio em edificações. É obrigatório e requer renovação 
+                    anual para diversos tipos de estabelecimentos. A falta do AVCB resulta em penalidades e multas, 
+                    podendo levar a processos legais. Oferecemos o serviço de laudo de AVCB, uma vistoria e emissão 
+                    de laudo técnico que destaca irregularidades no sistema de combate a incêndio. Isso permite corrigir 
+                    problemas antes da inspeção dos Bombeiros, garantindo a segurança dos usuários.
+
+                    <br>  
+                    <br>  
+                    <br>                                
+                </div>   
+            </div>  
+
+            <div class= "proj3" data-aos="fade-down-left"data-aos-duration="2000">
+                <div class = "inf3">Vistoria Cautelar de Vizinhança</div>
+                <div class = "card3" ><button id="btn" onclick="exibir3()">Ver Mais</div>
+                
+                <div class="cartao3" id = "cardtxt3" >A vistoria cautelar de vizinhança visa prevenir conflitos entre 
+                    construtoras e vizinhos próximos à obra, documentando anomalias e condições dos imóveis vizinhos 
+                    antes da construção. Essencial na fase de planejamento, evita disputas futuras sobre danos nas 
+                    estruturas adjacentes. Beneficia todas as partes, agindo de forma preventiva e atendendo a requisitos 
+                    legais, como a norma de Vistoria de Vizinhança do Ibape - Nacional.
+                    <br>  
+                    <br>              
+                </div>   
+            </div>  
+    
+            <div class= "proj4" data-aos="fade-down-left"data-aos-duration="2000">
+                <div class = "inf4">Inspeção de Entrega de Obras</div>
+                <div class = "card4" ><button id="btn" onclick="exibir4()">Ver Mais</div>
+                
+                <div class="cartao4" id = "cardtxt4" >A inspeção de entrega de obras busca identificar irregularidades 
+                    construtivas, incluindo falhas de execução e discrepâncias em relação a normas, projetos e descrições
+                    contratuais. Realizada após a construção ou reforma, essa verificação ajuda a construtora/incorporado
+                    ra a encontrar anomalias antes da entrega final, reduzindo necessidades de manutenção pós-obra. Além
+                    disso, preserva a reputação da empresa e evita possíveis problemas legais ao evitar desgastes com 
+                    clientes ou processos futuros.
+                    <br>  
+                    <br>              
+                </div> 
+            </div>  
+            
+            <div class= "proj5" data-aos="fade-down-right"data-aos-duration="2000">
+                <div class = "inf5">Inspeção de Recebimento de Imóveis</div>
+                <div class = "card5" ><button id="btn" onclick="exibir5()">Ver Mais</div>
+                    
+                <div class="cartao5" id = "cardtxt5" >A inspeção de recebimento de imóvel, busca constatar vícios construtivos ou 
+                    inconformidades, a partir da análise técnica, visual e documental. Tudo isso a fim de  garantir que o proprietário 
+                    obtenha o seu sonhado imóvel exatamente como adquiriu  no momento da compra. Também conhecida como vistoria de entrega das chaves, esse  
+                    serviço pode ser realizado na compra ou aluguel, bem como após reforma do imóvel.
+                    <br>  
+                    <br>              
+                </div> 
+            </div>
+            
+
+        </div>
+    </div>
+
+    <footer class="rodape" id = "fale comigo">
+        <h5> Mauro Cesar</h5>
+        <p>Para mais inforções</p>
+
+    <div class="social">
+        <a  href= "https://mail.google.com/mail/u/0/?hl=pt-BR" target="_blank"><img src="./email.jpg">
+        <a  href= "https://wa.me/5519994149901?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./wp.png">
+        <a  href= "https://www.instagram.com/" target="_blank"><img src="./instagram.jpg">
+    </div>
+    </footer>
+
+    <div class ="wp">
+        <a class = "botao"  href= "https://wa.me/551999363685?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./wp.png">
+    </div>
+    
+</body>
+<script>
+    const btn = document.querySelector('.black_light_btn');
+    const black_light = document.querySelector('.black_light');
+
+    btn.onclick = function()
+    {
+        this.classList.toggle("active");
+        black_light.classList.toggle("active");
+    }
+</script>
+
+<script src="script.js"></script>
+
+</html>
