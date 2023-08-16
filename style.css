@@ -61,7 +61,7 @@
 .text-justify {
     text-align: center;
     opacity: 1;
-    font: 25px sans-serif;
+    font: 20px sans-serif;
     color: rgb(255, 255, 255);
     z-index: 1;
 }
