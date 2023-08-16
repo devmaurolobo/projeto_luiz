@@ -64,14 +64,19 @@
     font: 20px sans-serif;
     color: rgb(255, 255, 255);
     z-index: 1;
+
 }
 
 #text-carrousel{
     display: flex;
     background-color: rgba(78, 78, 78, 0.6);
     text-justify: center;
+    font: 20px sans-serif;
     width: 60%;
-    margin: 85px;  
+    margin-top: 60px; 
+    
+    margin: 85px; 
+    
 }
 
 #color-light{
