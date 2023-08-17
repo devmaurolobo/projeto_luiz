@@ -32,15 +32,15 @@
     .black_light_btn{
         width: 50px;
         height: 25px; 
-        border: 3px solid #ffffff;
+        border: 3px solid #f7f7f7;
         border-radius: 60px;
         position: relative;
         cursor: pointer; 
 
     }
 
-    .black_light_btn.active{
-        border: 3px solid #050505;    
+    .black_light_btn.dark-mode{
+        border: 3px solid #070707;
     }
     
     .black_light_btn:after{
@@ -48,19 +48,19 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        background: #f8f8f8;
+        background: #ffffff;
         border-radius: 50% ;
         left:2px;
+        top: -0.5px;
         transform: translateY(-40);
     }
     
-    .black_light_btn.active:after{
-        
-        left:20px;
-        border: 5px solid #000000;
-        background: #0c0b0b;
-    }
+    .black_light_btn.dark-mode:after{ 
+        left:22px;
+        background-color: #000000;
     
+    }
+
     #black{
         position: relative;
         bottom: 10%;
@@ -80,9 +80,9 @@
 <body>
     
     <div class = "superior">
-        <div class="black_light" >
+        <div class="black_light" onclick="color()">
         
-            <div class="black_light_btn" >  <i class="fa-solid fa-moon fa-flip" style="color: #030303;" id="black" onclick="color()"></i>
+            <div class="black_light_btn" onclick="color()">  <i class="fa-solid fa-moon fa-flip" style="color: #030303;" id="black" onclick="color()"></i>
             <i class="fa-solid fa-sun fa-spin" style="color: #ffe32e;" id="sun" onclick="color()"></i> 
                 
             </div>
@@ -92,7 +92,7 @@
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000">Lgz<spam>Engenharia</spam></h2>
         <nav class = "menu"></nav>
-            <ul id="menu-list" >
+            <ul id="menu-list">
                 <li><a class="link-menu" href="#home">Home</a></li>
                 <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
                 <li><a class="link-menu" href="#fale comigo">Contato</a></li>
@@ -100,7 +100,7 @@
         </nav>
         <i class="fa-solid fa-bars "  id = "menu-icon" onclick="showMenu()"></i>
     </div>
-    <div class="box">
+    <div class="box"  >
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -240,16 +240,6 @@
     </div>
     
 </body>
-<script>
-    const btn = document.querySelector('.black_light_btn');
-    const black_light = document.querySelector('.black_light');
-
-    btn.onclick = function()
-    {
-        this.classList.toggle("active");
-        black_light.classList.toggle("active");
-    }
-</script>
 
 <script src="script.js"></script>
 

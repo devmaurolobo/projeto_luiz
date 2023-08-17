@@ -23,16 +23,15 @@
     z-index: 999;
 }
 
+.superior.dark-mode{
+    background-color: rgb(156, 156, 156);
+}
 .box{
     
     height: 90vh;
     align-items: center;
     justify-content: center;
     background-color: rgb(65, 66, 66);
-}
-
-.box{
-    background-color: rgb(78, 78, 78);
 }
 
 .box.dark-mode{
@@ -132,8 +131,8 @@
 
 
 .link-menu.dark-mode {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: rgb(156, 156, 156);
+    color: rgb(255, 255, 255);
 }
 
 #menu-list {
@@ -252,11 +251,7 @@ footer{
     border-radius: 50%;
 }
 
-.dark-mode {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    background: (rgb(235, 234, 234))
-}
+
 
 /*media query*/
 @media (max-width: 768px){
@@ -300,19 +295,28 @@ footer{
         left: 0%;    
         overflow: hidden;
         background-color: #262626;
-
         width: 100%;
-}     
+}  
+
+#menu-list.dark-mode {
+    background-color:rgb(156, 156, 156);
+
+} 
+
+
         
 .link-menu{
         display: flex;
         font-size: 18px;
-     
         margin-right: 10%;
 
-}
-}       
+.link-menu.dark-mode {
+    background-color:rgb(156, 156, 156);
+        
+} 
 
+}
+}    
 
 
 
