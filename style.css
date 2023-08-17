@@ -80,8 +80,7 @@
 
 #color-light{
     color: rgb(231, 228, 12);
-    font-size: 40px;
-    
+    font-size: 40px; 
 }
 
 #color-light.dark-mode{
@@ -116,6 +115,8 @@
 
 }
 
+
+
 .link-menu {
     display: flex;
     color: white;
@@ -126,17 +127,21 @@
     font-weight: 150px;
     cursor: pointer;
     text-decoration: none;
-    margin: 0px;
+    margin: 5px;
+}
+
+
+.link-menu.dark-mode {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 #menu-list {
     display: flex;
-    width: 300px;
     list-style: none;
     align-items: flex-end;
     margin: 0px;
     margin-top: 45px;
-
 }
 
 .link-menu:hover{
@@ -231,7 +236,7 @@ footer{
 .botao {
     position: fixed;
     bottom: 20px;
-    left: 95%;
+    right: 30px;
     background-color: transparent;
     z-index: 1;
 }
@@ -285,40 +290,32 @@ footer{
     z-index: 100;
 }
 
-
-#menu-list {
-    align-items: center;
-}
-
 #menu-list {
         display: flex;
         position: absolute;
+        align-items: center;
         transition: all 1s ease-in-out;
         flex-direction: column;
-        top: 10px;
-        left: 100px;     
-        overflow: hidden; 
+        top: 5px;
+        left: 0%;    
+        overflow: hidden;
+        background-color: #262626;
+
+        width: 100%;
 }     
         
 .link-menu{
         display: flex;
         font-size: 18px;
+     
+        margin-right: 10%;
 
 }
 }       
 
 
-.link-menu{
-    display: flex;
-    display: block;
-    flex-direction: column;
-    margin: 5px;
-}
 
-.link-menu.dark-mode {
-    background-color: rgb(255, 255, 255);
-    color: black;
-}
+
 
 
 
