@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./menu_radial.css">
-    <link rel="stylesheet" href="./projetos.css">
+    <link rel="stylesheet" href="./sobre.css">
+    <link rel="stylesheet" href="./black_light/black_light.css">
+    <link rel="stylesheet" href="./projetos/projetos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family= Josefin+Sans:wght@500 & family display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -15,140 +16,98 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
     <title>Mauro Cesar</title>
 </head>
-<style>
 
-    .black_light{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        bottom: 10px;
-        
-    }
-    
-    
-    .black_light_btn{
-        width: 50px;
-        height: 25px; 
-        border: 3px solid #f7f7f7;
-        border-radius: 60px;
-        position: relative;
-        cursor: pointer; 
-
-    }
-
-    .black_light_btn.dark-mode{
-        border: 3px solid #070707;
-    }
-    
-    .black_light_btn:after{
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: #ffffff;
-        border-radius: 50% ;
-        left:2px;
-        top: -0.5px;
-        transform: translateY(-40);
-    }
-    
-    .black_light_btn.dark-mode:after{ 
-        left:22px;
-        background-color: #000000;
-    
-    }
-
-    #black{
-        position: relative;
-        bottom: 10%;
-        left: 15%;
-    }
-    
-    #sun{
-        position: relative;
-        bottom: 10%;
-        left: 20%;
-    }
-    
-    
-    
-    </style>
 
 <body>
     
     <div class = "superior">
-        <div class="black_light" onclick="color()">
-        
-            <div class="black_light_btn" onclick="color()">  <i class="fa-solid fa-moon fa-flip" style="color: #030303;" id="black" onclick="color()"></i>
-            <i class="fa-solid fa-sun fa-spin" style="color: #ffe32e;" id="sun" onclick="color()"></i> 
-                
+    
+        <div class="box_logo">
+            <img src="./img/logo.png" class="logo">
+            <h1 class="nome">LGZ Engenharia</h1>
+        </div>
+            <div class="menu_left">
+                <nav class = "menu"></nav>
+                    <ul id="menu-list">
+                        <li><a class="link-menu" href="#home">Home</a></li>
+                        <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
+                        <li><a class="link-menu" href="#fale comigo">Contato</a></li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-bars "  id = "menu-icon" onclick="showMenu()"></i>
+            <div class="black_light" onclick="color()">
+            
+                <div class="black_light_btn" onclick="color()">  <i class="fa-solid fa-moon fa-flip" style="color: #030303;" id="black" onclick="color()"></i>
+                <i class="fa-solid fa-sun fa-spin" style="color: #ffe32e;" id="sun" onclick="color()"></i> 
+                </div>
             </div>
         </div>
-        
-        <h2 class="portfolio" data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">Lgz<spam>Engenharia</spam></h2>
-        <nav class = "menu"></nav>
-            <ul id="menu-list">
-                <li><a class="link-menu" href="#home">Home</a></li>
-                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
-                <li><a class="link-menu" href="#fale comigo">Contato</a></li>
-            </ul>
-        </nav>
-        <i class="fa-solid fa-bars "  id = "menu-icon" onclick="showMenu()"></i>
     </div>
-    <div class="box"  >
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="box">
+        
+        <h1 class="title">“Soluções confiáveis para a preservação do seu imóvel”</h1>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="./img1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none  " id="text-carrousel">
-                        <p class="text-justify">A inspeção das áreas comuns em condomínios busca identificar falhas construtivas por meio de análises técnicas e visuais. 
-                            Isso assegura que os proprietários recebam as áreas compartilhadas conforme prometido pela construtora. Realizar a inspeção antes do recebimento 
-                            oficial evita custos iniciais de manutenção e protege o síndico de responsabilidades legais.</p>
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./img/img1.png" class=" w-100" alt="...">
+                    <div class="carousel-caption">
+                        <p class="text-justify">A inspeção de áreas comuns em condomínios detecta falhas construtivas, garantindo que os proprietários recebam o que foi prometido e evitando custos iniciais de manutenção, protegendo o síndico de responsabilidades legais.
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="./img2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none  " id="text-carrousel">
+                <div class="carousel-item " data-bs-interval="4000">
+                    <img src="./img/img2.jpg" class=" w-100" alt="...">
+                    <div class="carousel-caption">
                         <p class="text-justify">A inspeção de recebimento de imóvel verifica problemas na construção usando análise técnica, visual e de documentos. Garante que 
                             o proprietário receba o imóvel conforme comprou, seja na compra, aluguel ou após reformas..</p>
                     </div>
                 </div>
-                <div class="carousel-item"data-bs-interval="5000">
-                    <img src="./img3.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none " id="text-carrousel">
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./img/img1.1.jpg" class=" w-100" alt="...">
+                    <div class="carousel-caption">
                         <p class="text-justify">A inspeção de entrega de obras identifica problemas construtivos após a construção ou reforma, permitindo correções pré-entrega. 
-                            Isso evita manutenções posteriores, protege a reputação da empresa e previne questões legais futuras com clientes</p>
+                            Isso evita manutenções posteriores, protege a reputação da empresa e previne questões legais futuras com clientes.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Próximo</span>
             </button>
         </div>
+        
     </div>
-    
+    <div Class="sobre_mim">
+        <h1>Sobre</h1>
+        <div class="historico">
+            <img src="./img/perfil.jpeg" alt="">
+            <p> Luiz Abreu, Engenheiro Civil desde 2017, com ampla experiência em projetos,
+                execução e infraestrutura, incluindo assistência às garantias em uma das maiores
+                construtoras do Brasil. Minha atenção aos detalhes me permitiu entender as causas
+                de problemas como trincas e infiltrações. Através da Engenharia Diagnóstica,
+                ofereço consultoria que identifica problemas, suas causas, tratamentos e potenciais
+                consequências, evitando gastos ineficazes. Meu objetivo é fornecer soluções
+                confiáveis e orientar os clientes na preservação de suas propriedades.</p>
+        </div>
+
+    </div>
 
     <div class = "projetos" id = "projetos-id">
         <h2> Serviços Prestados</h2>
-
         <div class="cards-projetos">
             <div class= "proj1" data-aos="fade-down-right"data-aos-duration="2000">
-                <div class = "inf1">Detecção Vazamentos</div>
+                <div class = "inf">Detecção Vazamentos</div>
                 <div class = "card1" ><button id="btn" onclick="exibir1()">Ver Mais</div>
                 
                 <div class="cartao1" id = "cardtxt1" >A vistoria de detecção de vazamento visa identificar a origem
@@ -162,15 +121,13 @@
             </div>
 
             <div class= "proj2" data-aos="fade-down-right"data-aos-duration="2000">
-                <div class = "inf2">Laudos de AVCB</div>
+                <div class = "inf">Laudos de AVCB</div>
                 <div class = "card2" ><button id="btn" onclick="exibir2()">Ver Mais</div>
                 
-                <div class="cartao2" id = "cardtxt2" >O Auto de Vistoria do Corpo de Bombeiros (AVCB) certifica o 
-                    cumprimento das normas de combate a incêndio em edificações. É obrigatório e requer renovação 
-                    anual para diversos tipos de estabelecimentos. A falta do AVCB resulta em penalidades e multas, 
-                    podendo levar a processos legais. Oferecemos o serviço de laudo de AVCB, uma vistoria e emissão 
-                    de laudo técnico que destaca irregularidades no sistema de combate a incêndio. Isso permite corrigir 
-                    problemas antes da inspeção dos Bombeiros, garantindo a segurança dos usuários.
+                <div class="cartao2" id = "cardtxt2" >
+                    O AVCB é um certificado obrigatório que atesta o cumprimento das normas anti-incêndio
+                     em edifícios. Oferecemos serviços de laudo de AVCB para identificar e corrigir problemas, 
+                    vitando penalidades e garantindo segurança.
 
                     <br>  
                     <br>  
@@ -179,7 +136,7 @@
             </div>  
 
             <div class= "proj3" data-aos="fade-down-left"data-aos-duration="2000">
-                <div class = "inf3">Vistoria Cautelar de Vizinhança</div>
+                <div class = "inf">Vistoria Cautelar de Vizinhança</div>
                 <div class = "card3" ><button id="btn" onclick="exibir3()">Ver Mais</div>
                 
                 <div class="cartao3" id = "cardtxt3" >A vistoria cautelar de vizinhança visa prevenir conflitos entre 
@@ -193,7 +150,7 @@
             </div>  
     
             <div class= "proj4" data-aos="fade-down-left"data-aos-duration="2000">
-                <div class = "inf4">Inspeção de Entrega de Obras</div>
+                <div class = "inf">Inspeção de Entrega de Obras</div>
                 <div class = "card4" ><button id="btn" onclick="exibir4()">Ver Mais</div>
                 
                 <div class="cartao4" id = "cardtxt4" >A inspeção de entrega de obras busca identificar irregularidades 
@@ -208,7 +165,7 @@
             </div>  
             
             <div class= "proj5" data-aos="fade-down-right"data-aos-duration="2000">
-                <div class = "inf5">Inspeção de Recebimento de Imóveis</div>
+                <div class = "inf">Inspeção de Recebimento de Imóveis</div>
                 <div class = "card5" ><button id="btn" onclick="exibir5()">Ver Mais</div>
                     
                 <div class="cartao5" id = "cardtxt5" >A inspeção de recebimento de imóvel, busca constatar vícios construtivos ou 
@@ -229,18 +186,29 @@
         <p>Para mais inforções</p>
 
     <div class="social">
-        <a  href= "https://mail.google.com/mail/u/0/?hl=pt-BR" target="_blank"><img src="./email.jpg">
-        <a  href= "https://wa.me/551999363685?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./wp.png">
-        <a  href= "https://www.instagram.com/" target="_blank"><img src="./instagram.jpg">
+        <a  href= "https://mail.google.com/mail/u/0/?hl=pt-BR" target="_blank"><img src="./img/email.jpg">
+        <a  href= "https://wa.me/551999363685?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./img/wp.png">
+        <a  href= "https://www.instagram.com/" target="_blank"><img src="./img/instagram.jpg">
     </div>
     </footer>
 
     <div class ="wp">
-        <a class = "botao"  href= "https://wa.me/551999363685?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./wp.png">
+        <a class = "botao"  href= "https://wa.me/551999363685?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./img/wp.png">
     </div>
     
 </body>
 
-<script src="script.js"></script>
+<script 
+    src="script.js">
+    AOS.init();
+
+    $(document).ready(function () {
+        // Inicialize o carrossel
+        $('#carouselExampleDark').carousel();
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 
 </html>

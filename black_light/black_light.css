@@ -1,0 +1,53 @@
+
+    .black_light{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px;
+        
+    }
+    
+    
+    .black_light_btn{
+        width: 50px;
+        height: 25px; 
+        border: 3px solid #f7f7f7;
+        border-radius: 60px;
+        position: relative;
+        cursor: pointer; 
+    }
+
+    .black_light_btn.dark-mode{
+        border: 3px solid #070707;
+    }
+    
+    .black_light_btn:after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #ffffff;
+        border-radius: 50% ;
+        left:2px;
+        top: -0.5px;
+        transform: translateY(-40);
+    }
+    
+    .black_light_btn.dark-mode:after{ 
+        left:22px;
+        background-color: #000000;
+    
+    }
+
+    #black{
+        position: relative;
+        bottom: 10%;
+        left: 15%;
+    }
+    
+    #sun{
+        position: relative;
+        bottom: 10%;
+        left: 20%;
+    }
+    

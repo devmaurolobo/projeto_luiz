@@ -1,0 +1,52 @@
+.sobre_mim{
+
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.sobre_mim h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.historico{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.historico img{
+    width: 500px;
+    border-radius: 50%;
+}
+
+.historico p{
+    width: 500px;
+    text-align: justify;
+}
+
+/*media query*/
+@media (max-width: 768px){
+
+    .historico{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .historico img{
+        width: 250px;
+        border-radius: 50%;
+    }
+    
+    .historico p{
+        font-size: 15px;
+        width: 250px;
+        text-align: justify;
+    }
+
+}
