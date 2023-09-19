@@ -104,7 +104,7 @@
     font-size: 24px; /* Tamanho da fonte */
     font-family: "Helvetica Neue", sans-serif; /* Substitua "Arial" pela fonte desejada */
     font-weight: bold; /* Texto em negrito para melhor visibilidade */
-    max-width: 600px; /* Define a largura máxima da descrição */
+    max-width: 700px; /* Define a largura máxima da descrição */
     margin: 0 auto; /* Centraliza a descrição horizontalmente */
     border-radius: 5px;
 }
@@ -128,18 +128,6 @@
     font-size: 40px;
 }
 
-.portfolio {
-    color: white;
-    font-size: 50px;
-    font-weight: 600;
-    margin-left: 26%;
-}
-
-.portfolio spam {
-    color: red;
-    font-size: 50px;
-}
-
 .menu{
     display: flex;
     align-items: center;    
@@ -159,7 +147,6 @@
 
 
 .link-menu.dark-mode {
-    
     color: rgb(2, 2, 2);
 }
 
@@ -180,7 +167,7 @@
 #menu-icon{
     display: none;
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 30px; 
 }
 
@@ -258,6 +245,7 @@ footer{
 }
 
 .botao {
+    
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -282,19 +270,21 @@ footer{
 .superior{
     height: 50px;
     width: 99vw;
+}
 
+.logo{
+    width: 50px;
+    border-radius: 20px;
 }
 
 .carousel-caption {
+    display: none;
+}
 
-    text-align: left; /* Centraliza o texto horizontalmente */
-    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da descrição */
-    color: #fff; /* Cor do texto */
-    width: 100%;
-    font-size: 15px; /* Tamanho da fonte */
-    font-family: "Helvetica Neue", sans-serif; /* Substitua "Arial" pela fonte desejada */
-    font-weight: bold; /* Texto em negrito para melhor visibilidade */
-    border-radius: 5px;
+.title{
+    width: 250px;
+    font-size: 20px;
+    text-align: center;   
 }
 
 #menu-icon{
@@ -314,16 +304,14 @@ footer{
         align-items: center;
         transition: all 1s ease-in-out;
         flex-direction: column;
-        top: 5px;
-        left: 0%;    
+        top: 5px;    
         overflow: hidden;
-        background-color: #262626;
+        background-color: #000000;
         width: 100%;
 }  
 
 #menu-list.dark-mode {
     background-color:rgb(156, 156, 156);
-
 } 
 
 
@@ -331,7 +319,7 @@ footer{
 .link-menu{
         display: flex;
         font-size: 18px;
-        margin-right: 10%;
+}      
 
 .link-menu.dark-mode {
     background-color:rgb(156, 156, 156);
@@ -339,7 +327,7 @@ footer{
 } 
 
 }
-}    
+  
 
 
 
